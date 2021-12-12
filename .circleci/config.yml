@@ -5,6 +5,8 @@ jobs:
       - image: ubuntu:latest
     steps:
       - run: echo "First trial"
+      - checkout
+      - run: ls
 workflows:
   version: 2
   first_workflow:
