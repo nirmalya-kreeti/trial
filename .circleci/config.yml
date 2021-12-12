@@ -3,7 +3,9 @@ jobs:
   first:
     docker:
       - image: ubuntu:latest
+    steps:
+      run: echo "First trial"
 workflows:
-  version:
+  version: 2
     jobs:
       - first
