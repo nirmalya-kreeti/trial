@@ -6,7 +6,9 @@ jobs:
     steps:
       - run: echo "First trial"
       - checkout
+      - run: pwd
       - run: ls
+      - run: cat README.md
 workflows:
   version: 2
   first_workflow:
